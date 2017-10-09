@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Synthetica Homepage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="resetstylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="header_wrapper">
+            <div class="header_logo">
+                <a href="#" class="synthetica_logo">
+                    <img src="./Images/synthetica-logo.png" />
+                </a>
+            </div>
+            <div class="navbar_wrapper">
+                <nav class="navbar" id="mobile-nav">
+                    <ul class="nav-items">
+                        <li>
+                            <a>The Collectives</a>
+                        </li>
+                        <li>
+                            <a>The Crew</a>
+                        </li>
+                        <li>
+                            <a>Articles</a>
+                        </li>
+                        <li>
+                            <a>Freebies</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="subscribe_wrapper">
+                    <ul class="subscribe_item">
+                        <li class="subscribe">
+                            <a class="subscribe_link">subscribe</a>
+                        </li>
+                        <li class="search">
+                            <a class="searchicon" id="togglelink">
+                                <img src="./Images/magnify1.png" />
+                                <img src="./Images/cross3.png" style="display:none;" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="search-section" class="search-wrapper">
+                    <ul class="search">
+                        <li>
+                            <input type="text" id="search-input" placeholder="Start typing then hit enter to search">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navicon" id="nav-icon">
+                <a class="nav-toggle">
+                    <span class="bar1"></span>
+                    <span class="bar2"></span>
+                    <span class="bar3"></span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="main-content-wrapper">
+        <div class="carousel">
+            <ul class="panes">
+                <li class="mySlides slider_img1">
+
+                    <div class="parent_wrapper">
+                        <div class="heading_wrapper">
+                            <h1 class="heading_content">Introducing, Synthetica. A blissful HTML5/CSS3 Template, free forever.</h1>
+                            <a class="heading_link">learn more</a>
+                        </div>
+                        <div class="bottom_heading">
+                            <p>Synthetica is a
+                                <strong>FREE</strong>, HTML5/CSS3 template, available for download exclusively via Codrops.</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="mySlides slider_img2">
+                    <div class="parent_wrapper">
+                        <div class="heading_wrapper">
+                            <h1 class="heading_content">Get a head start, with the Synthetica Sketch file.</h1>
+                            <a class="heading_link">download sketch file</a>
+                        </div>
+                        <div class="bottom_heading">
+                            <p>Create your landing Page in minutes, with Synthetica's Sketch style guide.</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="mySlides slider_img3">
+                    <div class="parent_wrapper">
+                        <div class="heading_wrapper">
+                            <h1 class="heading_content">Download Synthetica today, it's free forever.</h1>
+                            <a class="heading_link">download Template</a>
+                        </div>
+                        <div class="bottom_heading">
+                            <p>Available exclusively for Cropdrops.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="dots_wrapper">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+        <section class="video-container-wrapper">
+            <div class="row-1">
+                <div class="row1 heading">
+                    <h4>The Collective</h4>
+                </div>
+                <div class="row1 content">
+                    <p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress, banjo normcore trust fund
+                        hella. Kinfolk gluten-free lo-fi quinoa. Pabst kitsch ennui hoodie meggings banjo. Schlitz tacos
+                        kitsch godard before they sold out. Kale chips chillwave kickstarter photo booth cronut cold-pressed.
+                        Banjo fixie umami kombucha affogato gluten-free authentic slow-carb hashtag, hammock pour-over chambray
+                        viral VHS normcore.
+                    </p>
+                </div>
+            </div>
+            <div class="video_container">
+                <div class="video-wrapper">
+                    <video class="videoclass" controls>
+                        <source src="./Images/Game of Thrones.mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="row-2">
+                <p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress, banjo normcore trust fund hella.
+                    Kinfolk gluten-free lo-fi quinoa. </p>
+                <p>Pabst kitsch ennui hoodie meggings banjo. Schlitz tacos kitsch godard before they sold out. Kale chips chillwave
+                    kickstarter photo booth cronut cold-pressed. Banjo fixie umami kombucha affogato gluten-free authentic
+                    slow-carb hashtag, hammock pour-over chambray viral VHS normcore.
+                </p>
+            </div>
+
+        </section>
+        <section class="crew-info-wrapper">
+            <div class="crew-container">
+                <div class="crew-row1">
+                    <h4>The Crew</h4>
+                </div>
+                <div class="crew-row2">
+                    <div class="crew-inner-container">
+                        <div class="crew-profile-container crew-profile-1">
+                            <div class="crew-info">
+                                <h4>PETER FINLAN</h4>
+                                <p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress.</p>
+                                <div class="media-container">
+                                    <a class="icon twitter" href="#"></a>
+                                    <a class="icon in" href="#"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="crew-profile-container crew-profile-2">
+                            <div class="crew-info">
+                                <h4>BLAZE ROBAR</h4>
+                                <p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress.</p>
+                                <div class="media-container">
+                                    <a class="icon twitter" href="#"></a>
+                                    <a class="icon in" href="#"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="crew-profile-container crew-profile-3">
+                            <div class="crew-info">
+                                <h4>MARY LOU</h4>
+                                <p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress.</p>
+                                <div class="media-container">
+                                    <a class="icon twitter" href="#"></a>
+                                    <a class="icon in" href="#"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="crew-profile-container crew-profile-4">
+                            <div class="crew-info">
+                                <h4>KOBE WEST</h4>
+                                <p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress.</p>
+                                <div class="media-container">
+                                    <a class="icon twitter" href="#"></a>
+                                    <a class="icon in" href="#"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="crew-row3">
+                    <div class="column col-1">
+                        <div class="bar-chart-wrapper">
+                            <h5 class="bar-chart-text">Experience Design</h5>
+                            <span class="push-right">90%</span>
+                             <progress class="progressbar" id="bar1-90" value="0" max="100"></progress>   
+
+                        </div>
+
+                        <div class="bar-chart-wrapper">
+                            <h5 class="bar-chart-text">HTML5/CSS3</h5>
+                            <span class="push-right">95%</span>
+                            <progress class="progressbar" id="bar2-95" value="0" max="100"></progress>
+                        </div>
+                    </div>
+
+                    <div class="column col-2">
+                        <div class="bar-chart-wrapper">
+                            <h5 class="bar-chart-text">Interactive Prototyping</h5>
+                            <span class="push-right">80%</span>
+                            <progress class="progressbar" id="bar3-80" value="0" max="100"></progress>
+                        </div>
+
+                        <div class="bar-chart-wrapper">
+                            <h5 class="bar-chart-text">Visual Design</h5>
+                            <span class="push-right">90%</span>
+                            <progress class="progressbar" id="bar4-90" value="0" max="100"></progress>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-wrapper">
+            <div class="container" onload="counter('num1','num2','num3')">
+                <div class="commonstats">
+                    <span class="stats-icon">
+                        <img class="" src="./Images/iconcup.png">
+                    </span>
+                    <span class="stats-content">
+                        <p class="stats-number" id="num1">0</p>
+                        <p class="stats-text">awards won</p>
+                    </span>
+                </div>
+
+                <div class="commonstats">
+                    <span class="stats-icon">
+                        <img class="" src="./Images/iconbook.png">
+                    </span>
+                    <span class="stats-content">
+                        <p class="stats-number" id="num2">0</p>
+                        <p class="stats-text">articles</p>
+                    </span>
+                </div>
+
+                <div class="commonstats">
+                    <span class="stats-icon">
+                        <img class="" src="./Images/iconpen.png">
+                    </span>
+                    <span class="stats-content">
+                        <p class="stats-number" id="num3">0</p>
+                        <p class="stats-text">freebies</p>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section class="article-wrapper">
+            <div class="article-container">
+                <div class="heading-wrapper">
+                    <div class="container-heading">
+                        <h5>Latest Articles</h5>
+                    </div>
+                    <div class="sortby-wrapper">
+                        <h5>Sort By</h5>
+                        <select class="sortby">
+                            <option value="">Experience Design</option>
+                            <option value="">Visual Design</option>
+                            <option value="">UI Patterns</option>
+                            <option value="">Product Design</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="article-inner-container">
+                    <div class="article-common">
+                        <article>
+                            <a class="articles-link">
+                                <div class="imageblock article-img-1"></div>
+                                <div class="article-content">
+                                    <h5>8 solid tips when working with front-end developers</h5>
+                                    <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient
+                                        suspendisse ad rhoncus...</p>
+                                </div>
+                            </a>
+                            <div class="article-footer">
+                                <span class="footer_title">Product</span>
+                                <span class="footer_comments">
+                                    <a class="comment_icon"></a>
+                                    <a class="coment_number">42</a>
+                                </span>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="article-common">
+                        <article>
+                            <a class="articles-link">
+                                <div class="imageblock article-img-2"></div>
+                                <div class="article-content">
+                                    <h5>The 10 best traits of a awesome design leaders</h5>
+                                    <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient
+                                        suspendisse ad rhoncus...</p>
+                                </div>
+                            </a>
+                            <div class="article-footer">
+                                <span class="footer_title">Terms</span>
+                                <span class="footer_comments">
+                                    <a class="comment_icon"></a>
+                                    <a class="coment_number">53</a>
+                                </span>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="article-common">
+                        <article>
+                            <a class="articles-link">
+                                <div class="imageblock article-img-3"></div>
+                                <div class="article-content">
+                                    <h5>How to design well collaboratively with an agile product team</h5>
+                                    <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient
+                                        suspendisse ad rhoncus...</p>
+                                </div>
+                            </a>
+                            <div class="article-footer">
+                                <span class="footer_title">UX Design</span>
+                                <span class="footer_comments">
+                                    <a class="comment_icon"></a>
+                                    <a class="coment_number">60</a>
+                                </span>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="article-common">
+                        <article>
+                            <a class="articles-link">
+                                <div class="imageblock article-img-4"></div>
+                                <div class="article-content">
+                                    <h5>The essentials of modern interaction design (mobile + tablet)</h5>
+                                    <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient
+                                        suspendisse ad rhoncus...</p>
+                                </div>
+                            </a>
+                            <div class="article-footer">
+                                <span class="footer_title">Terms</span>
+                                <span class="footer_comments">
+                                    <a class="comment_icon"></a>
+                                    <a class="coment_number">32</a>
+                                </span>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="article-common">
+                        <article>
+                            <a class="articles-link">
+                                <div class="imageblock article-img-5"></div>
+                                <div class="article-content">
+                                    <h5>Overcoming barriers encountered in the pitch process (part 1)</h5>
+                                    <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient
+                                        suspendisse ad rhoncus...</p>
+                                </div>
+                            </a>
+                            <div class="article-footer">
+                                <span class="footer_title">UX Design</span>
+                                <span class="footer_comments">
+                                    <a class="comment_icon"></a>
+                                    <a class="coment_number">61</a>
+                                </span>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="article-common">
+                        <article>
+                            <a class="articles-link">
+                                <div class="imageblock article-img-6"></div>
+                                <div class="article-content">
+                                    <h5>10 things we've learnt about our users (Case Study)</h5>
+                                    <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient
+                                        suspendisse ad rhoncus...</p>
+                                </div>
+                            </a>
+                            <div class="article-footer">
+                                <span class="footer_title">Product</span>
+                                <span class="footer_comments">
+                                    <a class="comment_icon"></a>
+                                    <a class="coment_number">28</a>
+                                </span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="viewmore-wrapper">
+                    <a class="veiewmore-button">view more</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="freebies-wrapper">
+            <div class="freebies-inner-container">
+                <div class="freebies-heading">
+                    <h5>Freshest Freebies</h5>
+                </div>
+                <div class="freebies-top-container">
+                    <div class="para-container">
+                        <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse
+                            ad rhoncus cursus ut parturient viverra elit aliquam ultrices est sem. Tellus nam ad fermentum
+                            ac enim est duis facilisis congue a lacus adipiscing consequat risus consectetur scelerisque
+                            integer suspendisse a mus integer elit.</p>
+                    </div>
+                    <div class="para-container">
+                        <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse
+                            ad rhoncus cursus ut parturient viverra elit aliquam ultrices est sem. Tellus nam ad fermentum
+                            ac enim est duis facilisis congue a lacus adipiscing consequat risus consectetur scelerisque
+                            integer suspendisse a mus integer elit.</p>
+                    </div>
+                </div>
+                <div class="freebies-image-gallery">
+                    <div class="freebiegallery freebie-1">
+                        <div class="freebie-innerlayer">
+                            <div class="freebie-content">
+                                <span>03/10/2017</span>
+                                <h2>sedna html css content</h2>
+                                <div class="download_link">
+                                    <a>DOWNLOAD</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="freebiegallery freebie-2">
+                        <div class="freebie-innerlayer">
+                            <div class="freebie-content">
+                                <span>03/10/2017</span>
+                                <h2>land sketch template</h2>
+                                <div class="download_link">
+                                    <a>DOWNLOAD</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="freebiegallery freebie-3">
+                        <div class="freebie-innerlayer">
+                            <div class="freebie-content">
+                                <span>03/10/2017</span>
+                                <h2>synthetica html5/css3 template</h2>
+                                <div class="download_link">
+                                    <a>DOWNLOAD</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="freebiegallery freebie-4">
+                        <div class="freebie-innerlayer">
+                            <div class="freebie-content">
+                                <span>03/10/2017</span>
+                                <h2>free logo concepts by kobe west</h2>
+                                <div class="download_link">
+                                    <a>DOWNLOAD</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="viewmore-wrapper">
+                    <a class="veiewmore-button">view more</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="getstarted_wrapper">
+            <div class="getstarted_innercontainer">
+                <h2>Get started now. Download Synthetica
+                    <a class="free" href="#">FREE</a>, via Codrops.</h2>
+                <a class="getstarted">get started</a>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-container">
+                <div class="row">
+                    <div class="footer-image">
+                        <img src="./Images/synthetica-logo.png" />
+                    </div>
+                    <p>A free HTML5/CSS3 template, exclusively for
+                        <strong>Codrops</strong>
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="footer-navbar">
+                        <div class="footer-nav-1">
+                            <ul>
+                                <li>
+                                    <a>The Collective</a>
+                                </li>
+                                <li>
+                                    <a>The Crew</a>
+                                </li>
+                                <li>
+                                    <a>Article</a>
+                                </li>
+                                <li>
+                                    <a>Freebies</a>
+                                </li>
+                                <li>
+                                    <a>Subscribe</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-nav-2">
+                            <ul>
+                                <li>
+                                    <a>License</a>
+                                </li>
+                                <li>
+                                    <a>Share</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p>A free HTML5/CSS3 template, exclusively for
+                        <strong>Codrops</strong>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

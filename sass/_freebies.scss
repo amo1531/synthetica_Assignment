@@ -1,0 +1,186 @@
+.freebies-wrapper
+{
+    box-sizing: border-box;
+    padding-top: 90px;
+    
+    .freebies-inner-container{
+        margin-right: auto;
+        margin-left: auto;
+        @include clearfix;
+        .freebies-heading{
+            margin: 25px;
+            h5{
+                font-size: 15px;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+            h5:after {
+                    display: block;
+                    width: 30px;
+                    height: 2px;
+                    margin-top: 15px;
+                    content: '';
+                    background-color: #7AE2DE;
+            }
+        }
+    .freebies-top-container{
+        @include media-query(ipad){
+            margin:30px;
+            text-align: center;
+        }
+        @include clearfix;
+        .para-container{
+            width: 100%;
+            display: block;
+            box-sizing: border-box;
+            @include media-query(ipad){
+                width: 100%;
+                display: block;
+            }
+            @include media-query(widescreen){
+                 width: 45%;
+                display: inline-block;
+            }
+                p{
+                    font-size: 15px;
+                    line-height: 27px;
+                    padding-bottom: 15px;
+                    color: #414A52;
+            @include media-query(ipad){
+                text-align: left;
+            }
+                }
+        }
+        @include media-query(widescreen){
+            div:nth-child(1){
+                padding-right: 80px;
+                border-right: solid 1px #E5E7E9;
+            }
+            div:nth-child(2){
+                    padding-left: 80px;
+            }
+        }
+     }
+    .freebies-image-gallery{
+        margin: 0 -15px;
+        @include clearfix;
+        .freebiegallery{
+            width: 100%;
+            position: relative;
+            box-sizing: border-box;
+            height: 500px;
+            float: left;
+            @include media-query(ipad){
+                 width: 100%;
+            }
+            @include media-query(widescreen){
+                width: 50%;
+            }
+            &.freebie-1{
+                background: url("../Images/freebie-01.jpg") no-repeat center center / cover;
+            }
+            &.freebie-2{
+                background: url("../Images/freebie-02.jpg") no-repeat center center / cover;
+            }
+            &.freebie-3{
+                background: url("../Images/freebie-03.jpg") no-repeat center center / cover;
+            }
+            &.freebie-4{
+                 background: url("../Images/freebie-04.jpg") no-repeat center center / cover;
+            }
+            .freebie-innerlayer{
+                position: absolute;
+                z-index: 2;
+                width: 100%;
+                height: 100%;
+                display: none;
+                transition: opacity 300ms;
+                background-color: rgba(65,74,82,0.7);
+                .freebie-content{
+                    position: absolute;
+                    top: 32%;
+                    left: 7%;
+                    width: 85%;
+                    max-width: 700px;
+                    text-align: center;
+                    span{
+                        font-size: 13px;
+                        display: block;
+                        color: rgba(255,255,255,0.5);
+                    }
+                    h2{
+                        font-size: 13px;
+                        font-weight: 500;
+                        line-height: 15px;
+                        display: inline-block;
+                        margin-bottom: 30px;
+                        padding: 15px 30px 30px;
+                        letter-spacing: 2px;
+                        text-transform: uppercase;
+                        color: #fff;
+                        border-bottom: solid 2px #fff;
+                    }
+                    .download_link{
+                        a{
+                            display: inline-block;
+                            font-size: 13px;
+                            letter-spacing: 1px;
+                            text-transform: uppercase;
+                            color: #7AE2DE;
+                            border: 2px solid #7AE2DE;
+                            padding: 15px 20px;
+                            text-decoration: none;
+                            line-height: 1;
+                        }
+                        a:hover{
+                            color: #fff;
+                            background-color: #7AE2DE;
+                        }
+                    }
+                }
+            }
+        }
+        .freebiegallery:hover{
+            .freebie-innerlayer{
+                display: block;
+                cursor:pointer;
+            }
+        }
+        .freebiegallery::after{
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            content: '';
+            transition: background-color 300ms;
+            background-color: rgba(65,74,82,0.5);
+       }
+     }
+     
+     .viewmore-wrapper{
+                text-align: center;
+                margin: 0 auto;
+                padding: 60px 0;
+                a{
+                    display: inline-block;
+                    font-size: 13px;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: #7AE2DE;
+                    border: 2px solid #7AE2DE;
+                    padding: 15px 20px;
+                    text-decoration: none;
+                    line-height: 1;
+                    margin: 40px;
+                }
+            a:hover{
+                    color: #fff;
+                    background-color: #71D5D2;
+                    border-color: #71D5D2;
+                }
+            }
+    
+  }
+}

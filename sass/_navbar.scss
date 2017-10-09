@@ -1,0 +1,239 @@
+body{
+    @include fontstyle;
+    width: 100%;
+}
+.header_wrapper{
+    border-bottom: solid 5px #7ae2de;
+    background-color: #414A52;
+    position: relative;
+    @include media-query(ipad){
+        border-bottom: none;
+        background-color:#fff;
+    }
+    @include media-query(widescreen){
+        background-color: white;
+        border-bottom: none;
+    }
+    .header_logo{
+        display: inline-block;
+        height: inherit;
+        width: 240px;
+        img{
+            padding: 30px 0;
+        }
+        @include media-query(ipad){
+            border-bottom: solid 5px #7ae2de;
+            background-color:#414A52;
+            width: 280px;
+        }
+        @include media-query(widescreen){
+            background-color: #414A52;
+            width: 340px;
+        }
+    }
+         @include clearfix;
+        .navbar_wrapper{
+            height: inherit;
+            @include clearfix;
+            @include media-query(widescreen){
+                display: inline;
+                float: right;
+            }
+            nav{
+                display: none;
+                width: 100%;
+                text-align: center;
+                background-color: #414A52;
+                @include media-query(ipad){
+                    padding: 100px 0 0;
+                }
+                @include media-query(widescreen){
+                    display: inline-block;
+                    background: none;
+                    width: auto;
+                    padding: 37px 0;
+                    margin-right: 60px;
+                }
+                ul{
+                    display: inline-block;
+                    list-style: none;
+                    box-sizing: border-box;
+                    li{
+                        padding: 28px;
+                        font-size: 28px;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        box-sizing: border-box;
+                         @include media-query(ipad){
+                            font-size: 30px;
+                            display: block;
+                            padding: 10px 20px;
+                            
+                        }
+                        @include media-query(widescreen){
+                            font-size: 13px;
+                            display: inline-block;
+                            border-right: solid 1px #E5E7E9;
+                        }
+                        
+                        a{
+                            position: relative;
+                            padding-bottom: 10px;
+                            display: inline-block;
+                            text-decoration: none;
+                            cursor:pointer;
+                            @include media-query(ipad){
+                                display: block;
+                                padding-bottom: 40px;
+                            }
+                            @include media-query(widescreen){   
+                                padding: 0 0 10px 0;                      
+                                color: #414A52;
+                                
+                            }
+                        }
+                        
+                        @include media-query(widescreen){
+                            a:after {
+                                content: '';
+                                display: block;
+                                margin: auto;
+                                height: 3px;
+                                width: 0px;
+                                margin-top:5px;
+                                background: transparent;
+                                transition: width .5s ease, background-color .5s ease;
+                              }
+                              a:hover{
+                                color: #7AE2DE;
+                              }
+                            a:hover:after {
+                                width: 100%;
+                                background: #7AE2DE;
+                              }
+                        }
+                
+                    }
+                    li:nth-child(4){
+                            border-right: none;
+                    }
+                }
+            }
+        .subscribe_wrapper{
+                display: none;
+                height: inherit;
+             @include media-query(widescreen){
+                display: inline-block;
+                padding: 38px 30px;
+                background-color: #414A52;
+                box-sizing: border-box;
+                vertical-align: top;
+            }
+            ul{
+                display: inline-block;
+                li{
+                        font-size: 13px;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                        display: inline-block;
+                        &.subscribe{
+                            position: relative;
+                            padding: 10px 20px 10px 0;
+                            border-right: solid 1px #505c66;        
+                        }
+                        &.search{
+                            margin-left: 10px;
+                        }
+                        a{
+                            cursor:pointer;
+                            position: relative;
+                            padding-bottom: 10px;
+                            text-decoration: none;
+                            color: #7AE2DE;
+                        img{
+                            display: inline-block;
+                        }
+                    }
+                }     
+            }
+        }
+        .search-wrapper {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: none;  
+            width: 50%;
+            z-index: 10000;
+            padding: 38px 30px;
+            -webkit-transition: all 300ms;
+            transition: all 300ms;
+            opacity: 0;
+            background-color: #414A52;
+            ul{
+                li{
+                    display: inline-block;
+                    input{
+                            font-size: 13px;
+                            width: 300px;
+                            padding-bottom: 9px;
+                            -webkit-transition: all 300ms;
+                            transition: all 300ms;
+                            color: #fff;
+                            border: none;
+                            border-bottom: solid 2px #7AE2DE;
+                            background-color: #414A52;
+                        }
+                }
+            }
+           
+        }
+    }
+            @include clearfix;
+            .navicon{
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 30px 18px;
+                background-color: transparent;
+                transition: all 300ms ease-in-out;
+                // background-color: #414A52;
+                @include media-query(ipad){
+                    border-bottom: solid 5px #7ae2de;
+                    background-color:#414A52;
+                    padding: 30px 35px;
+                }
+                @include media-query(widescreen){
+                    display: none;
+                }
+               
+                .nav-toggle{
+                    cursor: pointer;
+                    .bar1,.bar2,.bar3{
+                        display: block;
+                        width: 35px;
+                        height: 5px;
+                        content: '';
+                        border-radius: 1px;
+                        background: #fff;
+                        margin: 6px 0;
+                        }
+                       
+                }
+                &.change .bar1 {
+                        -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+                        transform: rotate(-45deg) translate(-9px, 6px) ;
+                        }
+
+                        &.change .bar2 {opacity: 0;}
+
+                        &.change .bar3 {
+                        -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+                        transform: rotate(45deg) translate(-8px, -8px) ;
+                        }
+            }
+}
+
+        
+
+

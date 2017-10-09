@@ -1,0 +1,106 @@
+.video-container-wrapper{
+    // padding: 100px 0;
+    padding: 70px 0;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    @include clearfix;
+    .row-1
+    {
+        @include clearfix;
+        .row1{
+            &.heading{
+                width: 100%;
+                @include media-query(ipad){
+                width: 25%;
+                display: inline-block;
+                }     
+            } 
+            &.content{
+                 width: 100%;
+                 @include media-query(ipad){
+                    width: 75%;
+                    display: inline-block;
+                }     
+            }
+            float: left;
+            h4{
+                font-size: 15px;
+                font-weight: 600;
+                margin: 25px 0;
+                text-transform: uppercase;
+                @include media-query(ipad){
+                    margin: 7px 0 65px 45px;
+                }
+                @include media-query(widescreen){
+                    margin: 7px 0 60px 82px;
+                }     
+
+            }
+
+            h4:after{
+                    display: block;
+                    width: 30px;
+                    height: 2px;
+                    margin-top: 15px;
+                    content: "";
+                    background-color: #7AE2DE;
+            }
+
+             p{
+                font-size: 15px;
+                line-height: 27px;
+                // padding-bottom: 15px;
+                padding-bottom: 45px;
+                color: #414A52;
+            }
+        }
+    }
+    .video_container
+    {
+        display: inline-block;
+        background-color: #F4F6F9;
+        @include media-query(ipad){
+           margin-left: 100px;
+           padding: 10px;
+        }    
+        @include media-query(widescreen){
+            margin-left: 200px;
+        }     
+        .video-wrapper
+        {
+            box-sizing: border-box;
+            display: block;
+            position: relative;
+            height: 200px;
+            width: 300px;
+            @include media-query(ipad){
+                height: 300px;
+                width: 540px;
+            }    
+            
+            .videoclass{
+                position: absolute;
+                top: 0;
+                left: 0;
+                max-width: 100%;
+                max-height: 100%;
+
+            }
+        }
+    }
+    .row-2{
+        @include media-query(ipad){
+            margin-left: 25%;
+            padding-top:45px; 
+        }
+        p{
+            padding-bottom: 25px;
+            font-size: 15px;
+            line-height: 27px;
+            padding-bottom: 15px;
+            color: #414A52;
+
+        }
+ }
+}

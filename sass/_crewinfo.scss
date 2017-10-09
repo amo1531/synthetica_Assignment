@@ -1,0 +1,183 @@
+.crew-info-wrapper{
+    background-color: #F4F6F9;
+    padding: 100px 0;
+     width: 100%;
+    .crew-container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right:auto;
+    margin-left:auto;
+    box-sizing: border-box;
+    @include clearfix;
+    .crew-row1{
+        h4{
+        font-size: 15px;
+        font-weight: 600;
+        // margin: 7px 0 65px 60px;
+        margin: 25px 0;
+        text-transform: uppercase;
+         @include media-query(ipad){
+        margin-left:0;
+        padding: 10px;    
+        }
+        }
+        h4:after {
+                    display: block;
+                    width: 30px;
+                    height: 2px;
+                    margin-top: 15px;
+                    content: '';
+                    background-color: #7AE2DE;
+                }
+    }
+    .crew-row2{
+        box-sizing: border-box;
+        @include media-query(ipad){
+            text-align: center;
+        }
+        @include clearfix;
+        .crew-inner-container{
+            margin: 0 auto;
+            box-sizing: border-box;
+            @include clearfix;
+            .crew-profile-container{
+                box-sizing: border-box;
+                width: 100%;
+                height: 250px;
+                position: relative;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: inline-block;
+                margin-bottom: 20px;
+                @include media-query(ipad){
+                    width: 49%;
+                    margin-bottom: 0;
+                    height: 350px;
+                }
+                @include media-query(widescreen){
+                   width: 22%;
+                   height: 300px;
+                   margin: 13px;
+                }     
+                &.crew-profile-1{
+                    background-image: url("../Images/crew-blaz-robar.jpg");
+                }
+                &.crew-profile-2{
+                    background-image: url("../Images/crew-dude.jpg");
+                }
+                &.crew-profile-3{
+                    background-image: url("../Images/crew-mary-lou.jpg");
+                }
+                &.crew-profile-4{
+                    background-image: url("../Images/crew-peter-finlan.jpg");
+                }
+                .crew-info{
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    box-sizing: border-box;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    display: none;
+                    margin: auto;
+                    text-align: center;
+                    transition: all 300ms;
+                    background-color: rgba(122, 226, 222, 0.8);
+                    padding: 50px 0;
+                    h4{
+                        font-size: 15px;
+                        font-weight: 500;
+                        line-height: 20px;
+                        text-transform: uppercase;
+                        color: #fff;
+                    }
+                    p{
+                        padding: 15px 15px 25px;
+                        color: #fff;
+                        font-size: 15px;
+                        line-height: 27px;
+                    }
+                    .media-container{
+                        box-sizing: border-box;
+                        margin: 0 100px;
+                       
+                        @include clearfix;
+                        .icon{
+                            float: left;
+                            padding-right: 10px;
+                            height: 15px;
+                            width: 15px;
+                            background-repeat: no-repeat;
+                            background-position: center center;
+                            cursor: pointer;
+                        }
+                        .twitter{
+                            background-image: url("../Images/twitter.png");
+                        }
+                        .in{
+                            background-image: url("../Images/linkedin.png");
+                        }
+                    }
+                }
+            }
+            .crew-profile-container:hover{
+                .crew-info{
+                    display: block;
+                }
+            }
+        }
+
+    }
+    .crew-row3{
+    margin-right:auto;
+    margin-left:auto;
+    box-sizing: border-box;
+    @include clearfix;
+    .column{
+        width: 100%;
+        float: left;
+        box-sizing: border-box;
+         @include media-query(ipad){
+            width: 97%;    
+        }
+        @include media-query(widescreen){
+            width: 46%;
+            margin: 22px;
+        }
+    .bar-chart-wrapper{
+        box-sizing: border-box;
+        margin-bottom: 35px;
+        position: relative;
+        @include clearfix;
+        @include media-query(ipad){
+            margin-bottom: 5px;        
+        }
+        h5{
+            font-size: 13px;
+            font-weight: 600;
+            display: inline-block;
+            text-transform: uppercase;
+            color: #414A52;
+            margin: 20px 0;
+        }
+        span{
+            float: right;
+            margin: 20px 0;
+        }
+        progress::-moz-progress-bar { background: #7AE2DE; }
+    
+        progress::-webkit-progress-value { background: #7AE2DE; }
+        .progressbar{
+            display: block;
+            width: 100%;
+            height: 10px;
+            background-color: #414A52;
+        }
+    }
+    }
+  }
+}
+}
