@@ -139,14 +139,13 @@ body {
               margin: auto;
               height: 3px;
               width: 0px;
-              margin-top: 5px;
               background: transparent;
               transition: width .5s ease, background-color .5s ease; }
-            .header_wrapper .navbar_wrapper nav ul li a:hover {
-              color: #7AE2DE; }
             .header_wrapper .navbar_wrapper nav ul li a:hover:after {
               width: 100%;
-              background: #7AE2DE; } }
+              background: #7AE2DE; }
+            .header_wrapper .navbar_wrapper nav ul li a:hover {
+              color: #7AE2DE; } }
         .header_wrapper .navbar_wrapper nav ul li:nth-child(4) {
           border-right: none; }
     .header_wrapper .navbar_wrapper .subscribe_wrapper {
@@ -184,26 +183,39 @@ body {
       position: absolute;
       top: 0;
       right: 0;
-      display: none;
-      width: 50%;
-      z-index: 10000;
       padding: 38px 30px;
       -webkit-transition: all 300ms;
       transition: all 300ms;
-      opacity: 0;
-      background-color: #414A52; }
+      background-color: #414A52;
+      display: none;
+      visibility: visible;
+      height: 35px;
+      margin-right: 60px; }
       .header_wrapper .navbar_wrapper .search-wrapper ul li {
-        display: inline-block; }
+        list-style: none;
+        display: inline-block;
+        opacity: inherit; }
         .header_wrapper .navbar_wrapper .search-wrapper ul li input {
           font-size: 13px;
           width: 300px;
+          opacity: inherit;
           padding-bottom: 9px;
           -webkit-transition: all 300ms;
           transition: all 300ms;
           color: #fff;
           border: none;
           border-bottom: solid 2px #7AE2DE;
-          background-color: #414A52; }
+          background-color: #414A52;
+          margin-right: 245px; }
+        .header_wrapper .navbar_wrapper .search-wrapper ul li a {
+          font-size: 20px;
+          position: absolute;
+          top: 40%;
+          right: 30px;
+          color: #fff;
+          cursor: pointer; }
+          .header_wrapper .navbar_wrapper .search-wrapper ul li a img {
+            display: inline-block; }
   .header_wrapper:before, .header_wrapper:after {
     content: "";
     display: table; }

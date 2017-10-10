@@ -2,6 +2,17 @@
 $( document ).ready(function() {
  $("#togglelink").click(function(){
    $(this).find('img').toggle();
+   var srch=$(".search-wrapper").css("opacity");
+  //  console.log(srch);
+   if(srch==0){
+    $(".search-wrapper").css("opacity",1);
+    $(".search-wrapper").css("display","block");
+
+   }
+   else{
+    $(".search-wrapper").css("opacity",0);
+    $(".search-wrapper").css("display","none");
+   }
  });
  $("#nav-icon").click(function(){
    $(this).toggleClass("change");
