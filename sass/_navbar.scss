@@ -13,6 +13,7 @@ body{
     @include media-query(widescreen){
         background-color: white;
         border-bottom: none;
+        height: 100px;
     }
     .header_logo{
         display: inline-block;
@@ -20,6 +21,9 @@ body{
         width: 240px;
         img{
             padding: 30px 0;
+            @include media-query(widescreen){
+                padding: 30px;
+            }
         }
         @include media-query(ipad){
             border-bottom: solid 5px #7ae2de;
@@ -83,6 +87,7 @@ body{
                             display: inline-block;
                             text-decoration: none;
                             cursor:pointer;
+                            color: #fff;
                             @include media-query(ipad){
                                 display: block;
                                 padding-bottom: 40px;
@@ -163,7 +168,7 @@ body{
             position: absolute;
             top: 0;
             right: 0;
-            padding: 38px 30px;
+            padding: 32px;
             -webkit-transition: all 300ms;
             transition: all 300ms;
             background-color: #414A52;
@@ -189,6 +194,7 @@ body{
                             background-color: #414A52;
                             margin-right: 245px;
                         }
+
                     a{
                         font-size: 20px;
                         position: absolute;

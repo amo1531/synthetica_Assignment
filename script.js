@@ -2,9 +2,9 @@
 $( document ).ready(function() {
  $("#togglelink").click(function(){
    $(this).find('img').toggle();
-   var srch=$(".search-wrapper").css("opacity");
+   var srch=$(".search-wrapper").css("display");
   //  console.log(srch);
-   if(srch==0){
+   if(srch=="none"){
     $(".search-wrapper").css("opacity",1);
     $(".search-wrapper").css("display","block");
 
