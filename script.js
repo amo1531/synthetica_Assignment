@@ -28,6 +28,25 @@ $( document ).ready(function() {
      $(".main-content-wrapper").hide();
    }
  })
+ $("#share-button").click(function(){
+   var share_disp=$(".share-dropdown").css("display");
+   if(share_disp=="none"){
+    $(".share-dropdown").css("display","block");
+   }
+   else{
+    $(".share-dropdown").css("display","none");
+   }
+ })
+    $('.navbar .nav-items a[href^="#"]').click(function(e){
+    e.preventDefault();
+    var target =this.hash;
+    var $target=$(target);
+    $('html,body').animate({
+      'scrollTop':$target.offset().top
+    },1000,'swing',function(){
+      window.location.hash=target;
+    })
+});
 });
 
 /*==============================Carousal Slider Code============================================*/

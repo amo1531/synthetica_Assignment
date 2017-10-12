@@ -24,16 +24,16 @@
                 <nav class="navbar" id="mobile-nav">
                     <ul class="nav-items">
                         <li>
-                            <a>The Collectives</a>
+                            <a id="collective-link" href="#collective-section">The Collectives</a>
                         </li>
                         <li>
-                            <a>The Crew</a>
+                            <a id="crew-link" href="#crew-section">The Crew</a>
                         </li>
                         <li>
-                            <a>Articles</a>
+                            <a id="articles-link" href="#articles-section">Articles</a>
                         </li>
                         <li>
-                            <a>Freebies</a>
+                            <a id="freebies-link" href="#freebies-section">Freebies</a>
                         </li>
                     </ul>
                 </nav>
@@ -115,38 +115,39 @@
                 <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </div>
-        <section class="video-container-wrapper">
-            <div class="row-1">
-                <div class="row1 heading">
-                    <h4>The Collective</h4>
+        <section class="video-container-wrapper" id="collective-section">
+            <div class="side-wrapper">
+                <div class="row-1">
+                    <div class="row1 heading">
+                        <h4>The Collective</h4>
+                    </div>
+                    <div class="row1 content">
+                        <p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress, banjo normcore trust
+                            fund hella. Kinfolk gluten-free lo-fi quinoa. Pabst kitsch ennui hoodie meggings banjo. Schlitz
+                            tacos kitsch godard before they sold out. Kale chips chillwave kickstarter photo booth cronut
+                            cold-pressed. Banjo fixie umami kombucha affogato gluten-free authentic slow-carb hashtag, hammock
+                            pour-over chambray viral VHS normcore.
+                        </p>
+                    </div>
                 </div>
-                <div class="row1 content">
+                <div class="video_container">
+                    <div class="video-wrapper">
+                        <video class="videoclass" controls>
+                            <source src="./Images/Game of Thrones.mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="row-2">
                     <p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress, banjo normcore trust fund
-                        hella. Kinfolk gluten-free lo-fi quinoa. Pabst kitsch ennui hoodie meggings banjo. Schlitz tacos
-                        kitsch godard before they sold out. Kale chips chillwave kickstarter photo booth cronut cold-pressed.
-                        Banjo fixie umami kombucha affogato gluten-free authentic slow-carb hashtag, hammock pour-over chambray
-                        viral VHS normcore.
+                        hella. Kinfolk gluten-free lo-fi quinoa. </p>
+                    <p>Pabst kitsch ennui hoodie meggings banjo. Schlitz tacos kitsch godard before they sold out. Kale chips
+                        chillwave kickstarter photo booth cronut cold-pressed. Banjo fixie umami kombucha affogato gluten-free
+                        authentic slow-carb hashtag, hammock pour-over chambray viral VHS normcore.
                     </p>
                 </div>
             </div>
-            <div class="video_container">
-                <div class="video-wrapper">
-                    <video class="videoclass" controls>
-                        <source src="./Images/Game of Thrones.mp4">
-                    </video>
-                </div>
-            </div>
-            <div class="row-2">
-                <p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress, banjo normcore trust fund hella.
-                    Kinfolk gluten-free lo-fi quinoa. </p>
-                <p>Pabst kitsch ennui hoodie meggings banjo. Schlitz tacos kitsch godard before they sold out. Kale chips chillwave
-                    kickstarter photo booth cronut cold-pressed. Banjo fixie umami kombucha affogato gluten-free authentic
-                    slow-carb hashtag, hammock pour-over chambray viral VHS normcore.
-                </p>
-            </div>
-
         </section>
-        <section class="crew-info-wrapper">
+        <section class="crew-info-wrapper" id="crew-section">
             <div class="crew-container">
                 <div class="crew-row1">
                     <h4>The Crew</h4>
@@ -201,7 +202,7 @@
                         <div class="bar-chart-wrapper">
                             <h5 class="bar-chart-text">Experience Design</h5>
                             <span class="push-right">90%</span>
-                             <progress class="progressbar" id="bar1-90" value="0" max="100"></progress>   
+                            <progress class="progressbar" id="bar1-90" value="0" max="100"></progress>
 
                         </div>
 
@@ -230,7 +231,7 @@
         </section>
 
         <section class="stats-wrapper">
-            <div class="container" onload="counter('num1','num2','num3')">
+            <div class="container">
                 <div class="commonstats">
                     <span class="stats-icon">
                         <img class="" src="./Images/iconcup.png">
@@ -262,7 +263,7 @@
                 </div>
             </div>
         </section>
-        <section class="article-wrapper">
+        <section class="article-wrapper" id="articles-section">
             <div class="article-container">
                 <div class="heading-wrapper">
                     <div class="container-heading">
@@ -401,23 +402,25 @@
             </div>
         </section>
 
-        <section class="freebies-wrapper">
+        <section class="freebies-wrapper" id="freebies-section">
             <div class="freebies-inner-container">
-                <div class="freebies-heading">
-                    <h5>Freshest Freebies</h5>
-                </div>
-                <div class="freebies-top-container">
-                    <div class="para-container">
-                        <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse
-                            ad rhoncus cursus ut parturient viverra elit aliquam ultrices est sem. Tellus nam ad fermentum
-                            ac enim est duis facilisis congue a lacus adipiscing consequat risus consectetur scelerisque
-                            integer suspendisse a mus integer elit.</p>
+                <div class="top-container">
+                    <div class="freebies-heading">
+                        <h5>Freshest Freebies</h5>
                     </div>
-                    <div class="para-container">
-                        <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse
-                            ad rhoncus cursus ut parturient viverra elit aliquam ultrices est sem. Tellus nam ad fermentum
-                            ac enim est duis facilisis congue a lacus adipiscing consequat risus consectetur scelerisque
-                            integer suspendisse a mus integer elit.</p>
+                    <div class="freebies-top-container">
+                        <div class="para-container">
+                            <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse
+                                ad rhoncus cursus ut parturient viverra elit aliquam ultrices est sem. Tellus nam ad fermentum
+                                ac enim est duis facilisis congue a lacus adipiscing consequat risus consectetur scelerisque
+                                integer suspendisse a mus integer elit.</p>
+                        </div>
+                        <div class="para-container">
+                            <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse
+                                ad rhoncus cursus ut parturient viverra elit aliquam ultrices est sem. Tellus nam ad fermentum
+                                ac enim est duis facilisis congue a lacus adipiscing consequat risus consectetur scelerisque
+                                integer suspendisse a mus integer elit.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="freebies-image-gallery">
@@ -517,7 +520,26 @@
                                     <a>License</a>
                                 </li>
                                 <li>
-                                    <a>Share</a>
+                                    <a id="share-button">Share</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="share-dropdown" id="share-section">
+                            <ul>
+                                <li>
+                                    <a href="#" class="share-twitter">
+                                      <img class="share-icon" src="./Images/footer-twitter.png">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="share-facebook">
+                                      <img class="share-icon" src="./Images/fb.png">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="share-linkedin">
+                                      <img class="share-icon" src="./Images/in.png">
+                                    </a>
                                 </li>
                             </ul>
                         </div>

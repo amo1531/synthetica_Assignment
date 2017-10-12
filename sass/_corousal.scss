@@ -29,9 +29,7 @@
              &.slider_img3{
                 background:url("../Images/hero-bg-03.jpg") no-repeat center center/cover;
             }
-            @include media-query(widescreen){
-                height: 800px;
-            }
+            
             .heading_image{
                 display: block;
                 width: 100%;
@@ -53,7 +51,7 @@
                 margin: auto;
                 text-align: center;
                @include media-query(widescreen){
-                   padding: 200px 0;
+                   padding: 100px 0;
                }
                 .heading_wrapper{
                     margin-left: auto;
@@ -102,6 +100,9 @@
                         padding-top: 15px;
                         width: 80%;  
                         }     
+                    @include media-query(widescreen){
+                        margin-top: 0;
+                    }
                         p{
                             font-weight: 300;
                             margin: 0;

@@ -3,10 +3,13 @@
     width: 100%;
     .article-container{
         margin: 0 auto;
-        padding: 100px 0;
+        padding: 20px 0;
         padding-right: 15px;
         padding-left: 15px;
         box-sizing: border-box;
+        @include media-query(widescreen){
+            margin: 0 80px;
+        }
         .heading-wrapper{
             box-sizing: border-box;
             padding: 60px 0;
@@ -21,9 +24,12 @@
                 h5{
                     font-size: 15px;
                     font-weight: 600;
-                    margin: 25px 0px;
+                    margin: 7px 0 65px 0px;
                     color: #414A52;
                     text-transform: uppercase;
+                    @include media-query(widescreen){
+                        margin: 7px 0 65px 45px;
+                    }
                 }
                 h5:after {
                     display: block;

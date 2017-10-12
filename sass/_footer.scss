@@ -1,6 +1,7 @@
 footer{
     background-color: #414A52;
     padding: 80px 0;
+    position: relative;
     .footer-container{
         .row{
             box-sizing: border-box;
@@ -100,6 +101,59 @@ footer{
                             color: #7AE2DE;
                         }
                     }
+                }
+            }
+            .share-dropdown{
+                position: absolute;
+                bottom: 218px;
+                left: 15px;
+                display: none;
+                background-color: #fff;
+                box-shadow: 0 0 20px 0 rgba(50,57,74,0.31);
+                border-radius: 5px;
+                left: 15px;
+                transition: all 300ms;
+                opacity: 1;
+                @include media-query(ipad){
+                    bottom: 200px;
+                }
+                @include media-query(widescreen){
+                    bottom: 227px;
+                    left: 1050px;
+                }
+                ul{
+                    list-style: none;
+                    li{
+                        display: inline-block;
+                        margin: 10px 0;
+                        padding: 5px 20px;
+                        border-right: solid 1px #E5E7E9;
+                        a{
+                            display: block;
+                            text-decoration: none;
+                            img{
+                                max-width: 100%;
+                                max-height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            .share-dropdown:after {
+                position: absolute;
+                top: 100%;
+                left: 15%;
+                width: 0;
+                height: 0;
+                content: ' ';
+                pointer-events: none;
+                border: solid transparent;
+                border-width: 5px;
+                border-color: rgba(255,255,255,0);
+                border-top-color: #fff;
+                box-shadow: 0 0 20px 0 rgba(50,57,74,0.31);
+                @include media-query(widescreen){
+                    left: 75%;
                 }
             }
         }

@@ -5,6 +5,12 @@
     width: 100%;
     box-sizing: border-box;
     @include clearfix;
+    @include media-query(widescreen){
+        .side-wrapper{
+            margin: 0 80px;
+        }
+    }
+    
     .row-1
     {
         @include clearfix;

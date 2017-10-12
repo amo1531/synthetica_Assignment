@@ -98,6 +98,9 @@ body{
                                 
                             }
                         }
+                        a:hover{
+                            color: #7AE2DE;
+                        }
                         
                         @include media-query(widescreen){
                             a:after {

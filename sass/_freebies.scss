@@ -7,12 +7,20 @@
         margin-right: auto;
         margin-left: auto;
         @include clearfix;
+        @include media-query(widescreen){
+            .top-container{
+                margin: 0 80px;
+                margin-bottom: 80px;
+            }
+        }
         .freebies-heading{
             margin: 25px;
             h5{
                 font-size: 15px;
                 font-weight: 600;
                 text-transform: uppercase;
+                margin: 7px 0 65px 45px;
+                
             }
             h5:after {
                     display: block;
@@ -27,6 +35,9 @@
         @include media-query(ipad){
             margin:30px;
             text-align: center;
+        }
+        @include media-query(widescreen){
+            margin: 0;
         }
         @include clearfix;
         .para-container{
@@ -46,9 +57,12 @@
                     line-height: 27px;
                     padding-bottom: 15px;
                     color: #414A52;
-            @include media-query(ipad){
-                text-align: left;
-            }
+                    @include media-query(ipad){
+                        text-align: left;
+                    }
+                    @include media-query(widescreen){
+                        font-size: 13px;
+                    }
                 }
         }
         @include media-query(widescreen){
