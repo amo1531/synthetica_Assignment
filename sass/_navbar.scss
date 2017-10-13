@@ -146,27 +146,27 @@ body{
                         letter-spacing: 1px;
                         text-transform: uppercase;
                         display: inline-block;
-                        &.subscribe{
-                            position: relative;
-                            padding: 10px 20px 10px 0;
-                            border-right: solid 1px #505c66;        
-                        }
-                        &.search{
-                            margin-left: 10px;
-                        }
-                        a{
-                            cursor:pointer;
-                            position: relative;
-                            padding-bottom: 10px;
-                            text-decoration: none;
-                            color: #7AE2DE;
-                        img{
-                            display: inline-block;
-                        }
-                    }
-                }     
+                            &.subscribe{
+                                position: relative;
+                                padding: 10px 20px 10px 0;
+                                border-right: solid 1px #505c66;        
+                            }
+                            &.search{
+                                margin-left: 10px;
+                            }
+                            a{
+                                cursor:pointer;
+                                position: relative;
+                                padding-bottom: 10px;
+                                text-decoration: none;
+                                color: #7AE2DE;
+                                img{
+                                    display: inline-block;
+                                }
+                            }
+                    }     
+                 }
             }
-        }
         .search-wrapper {
             position: absolute;
             top: 0;

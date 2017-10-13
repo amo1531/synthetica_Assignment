@@ -1027,6 +1027,27 @@ body {
             width: 85%;
             max-width: 700px;
             text-align: center; }
+            .freebies-wrapper .freebies-inner-container .freebies-image-gallery .freebiegallery .freebie-innerlayer .freebie-content .freebies-like-section {
+              position: absolute;
+              top: -120px;
+              left: -20px;
+              width: 100px; }
+              .freebies-wrapper .freebies-inner-container .freebies-image-gallery .freebiegallery .freebie-innerlayer .freebie-content .freebies-like-section ul {
+                display: inline-block; }
+                .freebies-wrapper .freebies-inner-container .freebies-image-gallery .freebiegallery .freebie-innerlayer .freebie-content .freebies-like-section ul li {
+                  list-style-type: none;
+                  display: inline-block; }
+                  .freebies-wrapper .freebies-inner-container .freebies-image-gallery .freebiegallery .freebie-innerlayer .freebie-content .freebies-like-section ul li a {
+                    text-decoration: none;
+                    cursor: pointer; }
+                    .freebies-wrapper .freebies-inner-container .freebies-image-gallery .freebiegallery .freebie-innerlayer .freebie-content .freebies-like-section ul li a img {
+                      height: 20px;
+                      width: 20px;
+                      display: inline-block;
+                      margin-right: 10px; }
+                  .freebies-wrapper .freebies-inner-container .freebies-image-gallery .freebiegallery .freebie-innerlayer .freebie-content .freebies-like-section ul li span {
+                    font-size: 15PX;
+                    color: #fff; }
             .freebies-wrapper .freebies-inner-container .freebies-image-gallery .freebiegallery .freebie-innerlayer .freebie-content span {
               font-size: 13px;
               display: block;
@@ -1175,6 +1196,7 @@ footer {
                 margin-right: 50px;
                 border-bottom: none; } }
             footer .footer-container .row .footer-navbar .footer-nav-1 ul li a {
+              text-decoration: none;
               color: #fff;
               font-size: 13px;
               cursor: pointer; }
@@ -1213,6 +1235,7 @@ footer {
                 margin-right: 50px;
                 border-bottom: none; } }
             footer .footer-container .row .footer-navbar .footer-nav-2 ul li a {
+              text-decoration: none;
               color: #fff;
               font-size: 13px;
               cursor: pointer; }

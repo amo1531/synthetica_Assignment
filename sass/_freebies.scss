@@ -117,6 +117,36 @@
                     width: 85%;
                     max-width: 700px;
                     text-align: center;
+                    .freebies-like-section{
+                        position: absolute;
+                        top: -120px;
+                        left: -20px;
+                        width: 100px;
+                        ul{
+                            display: inline-block;
+                            li{
+                                list-style-type: none;
+                                display: inline-block;
+                                a{
+                                    text-decoration: none;
+                                    cursor: pointer;
+                                    img{
+                                        height: 20px;
+                                        width: 20px;
+                                        display: inline-block;
+                                        margin-right: 10px
+                                    }
+                                }
+                                span{
+                                    font-size: 15PX;
+                                    color: #fff;
+                                }
+        
+
+                            }
+                        }
+                      
+                    }
                     span{
                         font-size: 13px;
                         display: block;
